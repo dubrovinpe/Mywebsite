@@ -1,3 +1,41 @@
+/* --- LOKALE SCHRIFTARTEN (DSGVO KONFORM) --- */
+
+/* Space Grotesk - Regular */
+@font-face {
+  font-display: swap;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/space-grotesk-v22-latin-regular.woff2') format('woff2');
+}
+
+/* Space Grotesk - Bold */
+@font-face {
+  font-display: swap;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/space-grotesk-v22-latin-700.woff2') format('woff2');
+}
+
+/* Inter - Regular */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/inter-v20-latin-regular.woff2') format('woff2');
+}
+
+/* Inter - Bold */
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/inter-v20-latin-700.woff2') format('woff2');
+}
+
 /* --- VARIABLE DEFINITIONEN --- */
 :root {
     --primary: #007aff;
@@ -146,13 +184,12 @@ h1 {
     margin-bottom: 30px; 
 }
 
-/* DER FIX FÜR DEN GRADIENT TEXT */
 .gradient-text { 
     background: linear-gradient(90deg, var(--primary), var(--accent)); 
     background-clip: text;
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
-    color: transparent; /* Fallback */
+    color: transparent; 
     display: inline-block;
 }
 
