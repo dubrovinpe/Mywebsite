@@ -1,0 +1,90 @@
+/* Grund-Einstellungen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f172a; /* Sehr dunkles Blau */
+    color: #f8fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Überschriften */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #38bdf8; /* Hellblau */
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    margin-bottom: 40px;
+}
+
+/* Karten-Design */
+.card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+    border: 1px solid #334155;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(135deg, #38bdf8, #0284c7);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Interaktions-Nachricht */
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #10b981; /* Smaragdgrün */
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #64748b;
+}
