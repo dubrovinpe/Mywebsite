@@ -3,33 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dubrovinpe | Offizielle Website</title>
+    <title>DUBROVINPE.COM | PREMIUM WEBDESIGN & DEVELOPMENT</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>Willkommen auf <span class="highlight">Dubrovinpe.com</span></h1>
-            <p class="subtitle">Meine erste eigene Website – erstellt mit VS Code.</p>
-        </header>
+    <nav id="navbar">
+        <div class="logo">DUBROVINPE.COM</div>
+        <ul class="nav-links">
+            <li><a href="#expertise">EXPERTISE</a></li>
+            <li><a href="#contact">KONTAKT</a></li>
+        </ul>
+    </nav>
 
-        <main>
-            <section class="card">
-                <h2>Über dieses Projekt</h2>
-                <p>Ich lerne gerade, wie man modernes Webdesign ohne Baukasten umsetzt. Diese Seite wird direkt über GitHub gehostet und ist weltweit erreichbar.</p>
-            </section>
-            
-            <div class="action-area">
-                <button id="btn">Klick mich!</button>
-                <p id="message"></p>
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">NEXT GENERATION WEBDESIGN</span>
+            <h1>DIGITALE <span class="accent">EXZELLENZ</span></h1>
+            <p>Individuelle High-End Webseiten für Visionäre. Wir kombinieren Performance mit ästhetischem Design.</p>
+            <div class="cta-group">
+                <a href="#contact" class="btn-primary">PROJEKT STARTEN</a>
+                <a href="#expertise" class="btn-secondary">MEHR ERFAHREN</a>
             </div>
-        </main>
+        </div>
+    </header>
 
-        <footer>
-            <p>&copy; 2026 Dubrovinpe. Alle Rechte vorbehalten.</p>
-        </footer>
-    </div>
+    <section id="expertise" class="services">
+        <div class="section-head">
+            <h2>MEINE EXPERTISE</h2>
+            <div class="line"></div>
+        </div>
+        <div class="service-grid">
+            <div class="service-card">
+                <div class="icon">01</div>
+                <h3>MODERN STACK</h3>
+                <p>Nutzung modernster Technologien für maximale Geschwindigkeit und Sicherheit.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon">02</div>
+                <h3>UI/UX FOCUS</h3>
+                <p>Design, das nicht nur gut aussieht, sondern Ihre Besucher zu Kunden macht.</p>
+            </div>
+            <div class="service-card">
+                <h3>SEO OPTIMIZED</h3>
+                <p>Von Grund auf für Google optimierter Code für beste Sichtbarkeit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-box">
+            <h2>BEREIT FÜR ETWAS GROSSES?</h2>
+            <p>Lassen Sie uns Ihre neue Website planen.</p>
+            <button id="contactBtn">JETZT ANFRAGE SENDEN</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DUBROVINPE.COM</p>
+            <div class="footer-legal">
+                <a href="impressum.html">IMPRESSUM</a>
+                <a href="datenschutz.html">DATENSCHUTZ</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
