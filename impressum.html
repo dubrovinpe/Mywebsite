@@ -2,22 +2,32 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMPRESSUM | DUBROVINPE.COM</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
     <style>
-        body { background: #050505; color: white; font-family: sans-serif; padding: 8%; line-height: 1.8; }
-        .box { max-width: 800px; margin: auto; }
-        h1 { font-size: 3rem; font-weight: 900; margin-bottom: 40px; border-bottom: 1px solid #222; }
-        a { color: #0070f3; text-decoration: none; }
+        /* Spezifische Anpassungen nur für diese Seite */
+        body { padding: 8% 5%; line-height: 1.8; }
+        .box { max-width: 800px; margin: auto; position: relative; z-index: 1; }
+        h1 { font-family: 'Space Grotesk', sans-serif; font-size: 3rem; font-weight: 900; margin-bottom: 40px; border-bottom: 1px solid var(--border); }
+        h2 { font-family: 'Space Grotesk', sans-serif; margin-top: 30px; color: var(--primary); }
+        a { color: var(--primary); text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
+    <div class="bg-glow"></div>
+
     <div class="box">
         <h1>IMPRESSUM</h1>
         <p><strong>Angaben gemäß § 5 TMG</strong></p>
         <p>Peter Dubrovin<br>Winzererstraße 134<br>80797 München</p>
+        
         <h2>KONTAKT</h2>
-        <p>E-Mail: info@dubrovinpe.com<br>Telefon: +4915151909603</p>
-        <p><br><a href="index.html">← ZURÜCK</a></p>
+        <p>E-Mail: info@dubrovinpe<br>Telefon: +4915151909603</p>
+        
+        <p><br><a href="index.html">← ZURÜCK ZUR STARTSEITE</a></p>
     </div>
 </body>
 </html>
