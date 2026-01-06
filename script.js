@@ -1,18 +1,23 @@
-// Navigation Effekt beim Scrollen
+// Initialisiere Animationen
+AOS.init({
+    duration: 1000,
+    once: true,
+    easing: 'ease-out-cubic'
+});
+
+// Navbar Effekt
 window.addEventListener('scroll', () => {
-    const nav = document.getElementById('navbar');
-    if (window.scrollY > 50) {
-        nav.style.background = 'rgba(0,0,0,0.9)';
-        nav.style.padding = '15px 8%';
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 100) {
+        nav.classList.add('scrolled');
     } else {
-        nav.style.background = 'transparent';
-        nav.style.padding = '25px 8%';
+        nav.classList.remove('scrolled');
     }
 });
 
-// Kontakt Button Logik (Anti-Spam)
+// Kontakt Button Logik
 document.getElementById('contactBtn').addEventListener('click', () => {
-    const user = "info"; // Ändere das zu deiner E-Mail
-    const domain = "dubrovinpe.com";
-    window.location.href = `mailto:${user}@${domain}`;
+    const u = "info";
+    const d = "dubrovinpe.com";
+    window.location.href = `mailto:${u}@${d}`;
 });

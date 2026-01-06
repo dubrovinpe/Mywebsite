@@ -3,73 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DUBROVINPE.COM | PREMIUM WEBDESIGN & DEVELOPMENT</title>
+    <title>DUBROVINPE.COM | PREMIUM DIGITAL SOLUTIONS</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div class="bg-glow"></div>
+
     <nav id="navbar">
-        <div class="logo">DUBROVINPE.COM</div>
+        <div class="logo">DUBROVINPE<span>.</span></div>
         <ul class="nav-links">
-            <li><a href="#expertise">EXPERTISE</a></li>
-            <li><a href="#contact">KONTAKT</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#work">Projekte</a></li>
+            <li><a href="#contact" class="nav-cta">Starten</a></li>
         </ul>
     </nav>
 
     <header class="hero">
-        <div class="hero-content">
-            <span class="badge">NEXT GENERATION WEBDESIGN</span>
-            <h1>DIGITALE <span class="accent">EXZELLENZ</span></h1>
-            <p>Individuelle High-End Webseiten für Visionäre. Wir kombinieren Performance mit ästhetischem Design.</p>
-            <div class="cta-group">
-                <a href="#contact" class="btn-primary">PROJEKT STARTEN</a>
-                <a href="#expertise" class="btn-secondary">MEHR ERFAHREN</a>
+        <div class="hero-content" data-aos="zoom-out" data-aos-duration="1500">
+            <div class="status-pill">
+                <span class="dot"></span> Verfügbar für Projekte
+            </div>
+            <h1>BUILDING THE <br><span class="gradient-text">DIGITAL FUTURE</span></h1>
+            <p>Exzellentes Webdesign trifft auf saubere Performance. Ich entwickle digitale Lösungen, die Maßstäbe setzen.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-glow">Projekt anfragen</a>
+                <a href="#expertise" class="btn-outline">Meine Expertise</a>
             </div>
         </div>
+        <div class="scroll-indicator"></div>
     </header>
 
-    <section id="expertise" class="services">
-        <div class="section-head">
-            <h2>MEINE EXPERTISE</h2>
-            <div class="line"></div>
-        </div>
-        <div class="service-grid">
-            <div class="service-card">
-                <div class="icon">01</div>
-                <h3>MODERN STACK</h3>
-                <p>Nutzung modernster Technologien für maximale Geschwindigkeit und Sicherheit.</p>
-            </div>
-            <div class="service-card">
-                <div class="icon">02</div>
-                <h3>UI/UX FOCUS</h3>
-                <p>Design, das nicht nur gut aussieht, sondern Ihre Besucher zu Kunden macht.</p>
-            </div>
-            <div class="service-card">
-                <h3>SEO OPTIMIZED</h3>
-                <p>Von Grund auf für Google optimierter Code für beste Sichtbarkeit.</p>
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <h2 data-aos="fade-up">Meine Expertise<span>.</span></h2>
+            <div class="grid">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-num">01</div>
+                    <h3>High-End Design</h3>
+                    <p>Ästhetik, die Vertrauen schafft. Jedes Pixel wird mit Bedacht gesetzt.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-num">02</div>
+                    <h3>Clean Code</h3>
+                    <p>Hochoptimierter Code für maximale Ladezeiten und perfekte SEO-Werte.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-num">03</div>
+                    <h3>Scalability</h3>
+                    <p>Zukunftssichere Architekturen, die mit Ihrem Erfolg mitwachsen.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
-        <div class="contact-box">
-            <h2>BEREIT FÜR ETWAS GROSSES?</h2>
-            <p>Lassen Sie uns Ihre neue Website planen.</p>
-            <button id="contactBtn">JETZT ANFRAGE SENDEN</button>
+        <div class="contact-card" data-aos="flip-up">
+            <h2>Bereit für den <br>nächsten Schritt?</h2>
+            <p>Lassen Sie uns gemeinsam etwas Einzigartiges erschaffen.</p>
+            <button id="contactBtn" class="btn-main">E-Mail schreiben</button>
         </div>
     </section>
 
     <footer>
-        <div class="footer-bottom">
-            <p>&copy; 2026 DUBROVINPE.COM</p>
-            <div class="footer-legal">
-                <a href="impressum.html">IMPRESSUM</a>
-                <a href="datenschutz.html">DATENSCHUTZ</a>
+        <div class="footer-wrap">
+            <div class="footer-logo">DUBROVINPE.COM</div>
+            <div class="footer-nav">
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
             </div>
+            <p class="copy">&copy; 2026 Crafted with Passion.</p>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
