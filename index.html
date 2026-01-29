@@ -1,84 +1,199 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dubrovinpe</title>
+    <title>Dubrovinpe</title>
+    <meta name="description" content="Bespoke web development. Websites built from scratch for maximum performance.">
     
+    <!-- AOS Animation Library CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
+    <!-- Your Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="bg-glow"></div>
-
+    <!-- Navigation -->
     <nav id="navbar">
-        <div class="logo">DUBROVINPE<span>.</span></div>
-        <ul class="nav-links">
-            <li><a href="#expertise">Expertise</a></li>
-            <li><a href="#work">Projekte</a></li>
-            <li><a href="#contact" class="nav-cta">Starten</a></li>
-        </ul>
+        <div class="container nav-inner">
+            <a href="#" class="logo">DUBROVINPE<span>.</span></a>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#expertise" class="nav-link">Expertise</a></li>
+                <li><a href="#process" class="nav-link">Process</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Let's Talk</a></li>
+            </ul>
+        </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="hero">
-        <div class="hero-content" data-aos="zoom-out" data-aos-duration="1500">
-            <div class="status-pill">
-                <span class="dot"></span> Verfügbar für Projekte
+        <!-- Canvas for Particle Animation -->
+        <canvas id="hero-canvas"></canvas>
+
+        <div class="container hero-content" data-aos="fade-up" data-aos-duration="1200">
+            <div class="availability">
+                <span class="dot"></span> Accepting New Projects
             </div>
-            <h1>BUILDING THE <br><span class="gradient-text">DIGITAL FUTURE</span></h1>
-            <p>Exzellentes Webdesign trifft auf saubere Performance. Ich entwickle digitale Lösungen, die Maßstäbe setzen.</p>
-            <div class="hero-btns">
-                <a href="#contact" class="btn-glow">Projekt anfragen</a>
-                <a href="#expertise" class="btn-outline">Meine Expertise</a>
+            <h1>Digital Assets <br><span class="gradient-text">Built from Zero</span></h1>
+            <p>I don't use templates. I engineer bespoke, high-performance websites from a blank canvas, tailored precisely to your brand's DNA.</p>
+            <div class="btn-group">
+                <a href="#contact" class="btn btn-primary">Start a Project</a>
+                <a href="#expertise" class="btn btn-outline">The Approach</a>
             </div>
         </div>
-        <div class="scroll-indicator"></div>
+        
+        <div class="scroll-down">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+        </div>
     </header>
 
+    <!-- Subtle Marquee (Infinite Loop) -->
+    <section class="clients">
+        <div class="marquee-content">
+            <!-- Round 1 -->
+            <span class="client-item">No Templates</span>
+            <span class="client-item">Custom Code</span>
+            <span class="client-item">Unique Architecture</span>
+            <span class="client-item">High Performance</span>
+            <span class="client-item">Full Ownership</span>
+            <span class="client-item">Zero Bloat</span>
+
+            <!-- Round 2 -->
+            <span class="client-item">No Templates</span>
+            <span class="client-item">Custom Code</span>
+            <span class="client-item">Unique Architecture</span>
+            <span class="client-item">High Performance</span>
+            <span class="client-item">Full Ownership</span>
+            <span class="client-item">Zero Bloat</span>
+
+            <!-- Round 3 -->
+            <span class="client-item">No Templates</span>
+            <span class="client-item">Custom Code</span>
+            <span class="client-item">Unique Architecture</span>
+            <span class="client-item">High Performance</span>
+            <span class="client-item">Full Ownership</span>
+            <span class="client-item">Zero Bloat</span>
+
+            <!-- Round 4 -->
+            <span class="client-item">No Templates</span>
+            <span class="client-item">Custom Code</span>
+            <span class="client-item">Unique Architecture</span>
+            <span class="client-item">High Performance</span>
+            <span class="client-item">Full Ownership</span>
+            <span class="client-item">Zero Bloat</span>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
     <section id="expertise" class="expertise">
         <div class="container">
-            <h2 data-aos="fade-up">Meine Expertise<span>.</span></h2>
-            <div class="grid">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle">The Difference</span>
+                <h2 class="section-title">Why build <br>from scratch?</h2>
+            </div>
+
+            <div class="expertise-grid">
                 <div class="card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-num">01</div>
-                    <h3>High-End Design</h3>
-                    <p>Ästhetik, die Vertrauen schafft. Jedes Pixel wird mit Bedacht gesetzt.</p>
+                    <span class="card-num">01</span>
+                    <div class="card-icon">✎</div>
+                    <h3>100% Custom Design</h3>
+                    <p>No generic layouts. Every pixel is placed with intention to create a unique visual identity that reflects your specific business values.</p>
                 </div>
                 <div class="card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-num">02</div>
-                    <h3>Clean Code</h3>
-                    <p>Hochoptimierter Code für minimale Ladezeiten und perfekte SEO-Werte.</p>
+                    <span class="card-num">02</span>
+                    <div class="card-icon">⚡</div>
+                    <h3>Zero Code Bloat</h3>
+                    <p>Templates load code you don't need. I write lean, semantic code from scratch. This results in lightning-fast speeds and perfect SEO scores.</p>
                 </div>
                 <div class="card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-num">03</div>
-                    <h3>Scalability</h3>
-                    <p>Zukunftssichere Architekturen, die mit Ihrem Erfolg mitwachsen.</p>
+                    <span class="card-num">03</span>
+                    <div class="card-icon">∞</div>
+                    <h3>Total Ownership</h3>
+                    <p>Break free from theme restrictions. Custom code means you own your platform entirely, allowing for unlimited scalability and future-proofing.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="contact-card" data-aos="flip-up">
-            <h2>Bereit für den <br>nächsten Schritt?</h2>
-            <p>Lassen Sie uns gemeinsam etwas Einzigartiges erschaffen.</p>
-            <button id="contactBtn" class="btn-main">E-Mail schreiben</button>
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle">Methodology</span>
+                <h2 class="section-title">The Build Process</h2>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step" data-aos="fade-up">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h4>Blueprinting</h4>
+                        <p>We start with a blank slate. I analyze your requirements to architect a solution that fits perfectly, rather than forcing your needs into a pre-made box.</p>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h4>Art & Engineering</h4>
+                        <p>Design and development happen in tandem. I hand-code the front-end to ensure the design is translated pixel-perfectly without loss of quality.</p>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h4>Optimization</h4>
+                        <p>Rigorous testing and optimization. Since we own every line of code, we can push performance to the absolute limit.</p>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h4>Handover</h4>
+                        <p>You receive a clean, scalable codebase and full ownership documentation. Your digital asset is ready to grow with you.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-wrap">
-            <div class="footer-logo">DUBROVINPE.COM</div>
-            <div class="footer-nav">
-                <a href="impressum.html">Impressum</a>
-                <a href="datenschutz.html">Datenschutz</a>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-box" data-aos="zoom-in-up">
+                <div class="contact-content">
+                    <h2 class="contact-title">Ready to build?</h2>
+                    <p class="contact-text">Let's discuss your vision. I build bespoke digital products for clients who demand excellence.</p>
+                    <a href="mailto:info@dubrovinpe.com" class="email-link">info@dubrovinpe.com</a>
+                </div>
             </div>
-            <p class="copy">&copy; 2026 Crafted with Passion.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo" style="font-size: 1.2rem;">DUBROVINPE<span>.</span></div>
+                <div class="footer-links">
+                    <a href="impressum.html">Imprint</a>
+                    <a href="datenschutz.html">Privacy Policy</a>
+                </div>
+                <div class="copyright">
+                    &copy; 2026 dubrovinpe.com. All rights reserved.
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
