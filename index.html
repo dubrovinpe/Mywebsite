@@ -3,198 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dubrovinpe</title>
+    <title>DUBROVINPE</title>
     <meta name="description" content="Bespoke web development. Websites built from scratch for maximum performance.">
     
-    <!-- AOS Animation Library CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     
-    <!-- Your Custom CSS -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="container nav-inner">
-            <a href="#" class="logo">DUBROVINPE<span>.</span></a>
-            
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+    <!-- Custom Cursor Elements -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
 
-            <ul class="nav-links">
-                <li><a href="#expertise" class="nav-link">Expertise</a></li>
-                <li><a href="#process" class="nav-link">Process</a></li>
-                <li><a href="#contact" class="nav-link nav-cta">Let's Talk</a></li>
-            </ul>
+    <!-- WebGL Background Canvas -->
+    <div id="canvas-container"></div>
+
+    <!-- Bottom Light Effects -->
+    <div class="bottom-glow-overlay" id="glow-overlay"></div>
+    <div class="bottom-beam" id="bottom-beam"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="magnetic-area">
+            <a href="#" class="logo magnetic-wrap">DUBROVINPE<span style="color:var(--primary)">.</span></a>
+        </div>
+        
+        <ul class="nav-links">
+            <li class="magnetic-area"><a href="#expertise" class="nav-link magnetic-wrap">Expertise</a></li>
+            <li class="magnetic-area"><a href="#process" class="nav-link magnetic-wrap">Process</a></li>
+            <li class="magnetic-area"><a href="#contact" class="nav-link magnetic-wrap">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Menu Icon -->
+        <div class="mobile-toggle magnetic-area">
+            <div class="bar magnetic-wrap"></div>
+            <div class="bar magnetic-wrap"></div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
-        <!-- Canvas for Particle Animation -->
-        <canvas id="hero-canvas"></canvas>
-
-        <div class="container hero-content" data-aos="fade-up" data-aos-duration="1200">
-            <div class="availability">
-                <span class="dot"></span> Accepting New Projects
-            </div>
-            <h1>Digital Assets <br><span class="gradient-text">Built from Zero</span></h1>
-            <p>I don't use templates. I engineer bespoke, high-performance websites from a blank canvas, tailored precisely to your brand's DNA.</p>
-            <div class="btn-group">
-                <a href="#contact" class="btn btn-primary">Start a Project</a>
-                <a href="#expertise" class="btn btn-outline">The Approach</a>
-            </div>
+    <header>
+        <div class="hero-status">
+            <div class="status-dot"></div>
+            Accepting New Projects
         </div>
+        <h1>
+            Website <br>
+            <span class="highlight">Built from Zero</span>
+        </h1>
+        <p class="hero-desc">
+            I don't use templates. I engineer bespoke, high-performance websites from a blank canvas, tailored precisely to your brand's DNA.
+        </p>
         
-        <div class="scroll-down">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+        <!-- Button Wrapper (Magnetic effect disabled in JS for clickability) -->
+        <div class="magnetic-area">
+            <a href="#contact" class="btn-main magnetic-wrap">Start a Project</a>
         </div>
     </header>
 
-    <!-- Subtle Marquee (Infinite Loop) -->
-    <section class="clients">
+    <!-- Marquee Section -->
+    <section class="marquee-wrap">
         <div class="marquee-content">
-            <!-- Round 1 -->
-            <span class="client-item">No Templates</span>
-            <span class="client-item">Custom Code</span>
-            <span class="client-item">Unique Architecture</span>
-            <span class="client-item">High Performance</span>
-            <span class="client-item">Full Ownership</span>
-            <span class="client-item">Zero Bloat</span>
-
-            <!-- Round 2 -->
-            <span class="client-item">No Templates</span>
-            <span class="client-item">Custom Code</span>
-            <span class="client-item">Unique Architecture</span>
-            <span class="client-item">High Performance</span>
-            <span class="client-item">Full Ownership</span>
-            <span class="client-item">Zero Bloat</span>
-
-            <!-- Round 3 -->
-            <span class="client-item">No Templates</span>
-            <span class="client-item">Custom Code</span>
-            <span class="client-item">Unique Architecture</span>
-            <span class="client-item">High Performance</span>
-            <span class="client-item">Full Ownership</span>
-            <span class="client-item">Zero Bloat</span>
-
-            <!-- Round 4 -->
-            <span class="client-item">No Templates</span>
-            <span class="client-item">Custom Code</span>
-            <span class="client-item">Unique Architecture</span>
-            <span class="client-item">High Performance</span>
-            <span class="client-item">Full Ownership</span>
-            <span class="client-item">Zero Bloat</span>
+            <span class="marquee-item">No Templates</span>
+            <span class="marquee-item">Custom Code</span>
+            <span class="marquee-item">Unique Architecture</span>
+            <span class="marquee-item">High Performance</span>
+            <span class="marquee-item">Full Ownership</span>
+            <span class="marquee-item">Zero Bloat</span>
+            <!-- Duplicate for seamless loop -->
+            <span class="marquee-item">No Templates</span>
+            <span class="marquee-item">Custom Code</span>
+            <span class="marquee-item">Unique Architecture</span>
+            <span class="marquee-item">High Performance</span>
+            <span class="marquee-item">Full Ownership</span>
+            <span class="marquee-item">Zero Bloat</span>
         </div>
     </section>
 
-    <!-- Expertise Section -->
-    <section id="expertise" class="expertise">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="subtitle">The Difference</span>
-                <h2 class="section-title">Why build <br>from scratch?</h2>
-            </div>
+    <!-- Expertise Section (3D Tilt) -->
+    <section id="expertise" class="section-padding">
+        <span class="section-label">The Difference</span>
+        <h2 class="grid-title">Why build<br>from scratch?</h2>
 
-            <div class="expertise-grid">
-                <div class="card" data-aos="fade-up" data-aos-delay="100">
-                    <span class="card-num">01</span>
-                    <div class="card-icon">✎</div>
-                    <h3>100% Custom Design</h3>
-                    <p>No generic layouts. Every pixel is placed with intention to create a unique visual identity that reflects your specific business values.</p>
+        <div class="card-grid">
+            <!-- Card 1 -->
+            <article class="tilt-card">
+                <div class="card-glare"></div>
+                <div class="card-num">01</div>
+                <div class="card-content">
+                    <h3 class="card-title">100% Custom Design</h3>
+                    <p class="card-text">No generic layouts. Every pixel is placed with intention to create a unique visual identity.</p>
                 </div>
-                <div class="card" data-aos="fade-up" data-aos-delay="200">
-                    <span class="card-num">02</span>
-                    <div class="card-icon">⚡</div>
-                    <h3>Zero Code Bloat</h3>
-                    <p>Templates load code you don't need. I write lean, semantic code from scratch. This results in lightning-fast speeds and perfect SEO scores.</p>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="tilt-card">
+                <div class="card-glare"></div>
+                <div class="card-num">02</div>
+                <div class="card-content">
+                    <h3 class="card-title">Zero Code Bloat</h3>
+                    <p class="card-text">I write lean, semantic code. This results in lightning-fast speeds and perfect SEO scores.</p>
                 </div>
-                <div class="card" data-aos="fade-up" data-aos-delay="300">
-                    <span class="card-num">03</span>
-                    <div class="card-icon">∞</div>
-                    <h3>Total Ownership</h3>
-                    <p>Break free from theme restrictions. Custom code means you own your platform entirely, allowing for unlimited scalability and future-proofing.</p>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="tilt-card">
+                <div class="card-glare"></div>
+                <div class="card-num">03</div>
+                <div class="card-content">
+                    <h3 class="card-title">Total Ownership</h3>
+                    <p class="card-text">Custom code means you own your platform entirely, allowing for unlimited scalability.</p>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
     <!-- Process Section -->
-    <section id="process" class="process-section">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="subtitle">Methodology</span>
-                <h2 class="section-title">The Build Process</h2>
+    <section id="process" class="section-padding">
+        <span class="section-label">Methodology</span>
+        <h2 class="grid-title">The Build Process</h2>
+
+        <div class="process-list">
+            <div class="process-item magnetic-area">
+                <div class="p-num">01</div>
+                <div class="p-info">
+                    <h3>Blueprinting</h3>
+                    <p class="card-text">We start with a blank slate. I analyze your requirements to architect a solution that fits perfectly.</p>
+                </div>
             </div>
-            
-            <div class="process-steps">
-                <div class="step" data-aos="fade-up">
-                    <div class="step-number">01</div>
-                    <div class="step-content">
-                        <h4>Blueprinting</h4>
-                        <p>We start with a blank slate. I analyze your requirements to architect a solution that fits perfectly, rather than forcing your needs into a pre-made box.</p>
-                    </div>
+            <div class="process-item magnetic-area">
+                <div class="p-num">02</div>
+                <div class="p-info">
+                    <h3>Art & Engineering</h3>
+                    <p class="card-text">Design and development happen in tandem. I hand-code the front-end to ensure pixel-perfect translation.</p>
                 </div>
-                <div class="step" data-aos="fade-up" data-aos-delay="100">
-                    <div class="step-number">02</div>
-                    <div class="step-content">
-                        <h4>Art & Engineering</h4>
-                        <p>Design and development happen in tandem. I hand-code the front-end to ensure the design is translated pixel-perfectly without loss of quality.</p>
-                    </div>
-                </div>
-                <div class="step" data-aos="fade-up" data-aos-delay="200">
-                    <div class="step-number">03</div>
-                    <div class="step-content">
-                        <h4>Optimization</h4>
-                        <p>Rigorous testing and optimization. Since we own every line of code, we can push performance to the absolute limit.</p>
-                    </div>
-                </div>
-                <div class="step" data-aos="fade-up" data-aos-delay="300">
-                    <div class="step-number">04</div>
-                    <div class="step-content">
-                        <h4>Handover</h4>
-                        <p>You receive a clean, scalable codebase and full ownership documentation. Your digital asset is ready to grow with you.</p>
-                    </div>
+            </div>
+            <div class="process-item magnetic-area">
+                <div class="p-num">03</div>
+                <div class="p-info">
+                    <h3>Optimization</h3>
+                    <p class="card-text">Rigorous testing and optimization. Since we own every line of code, we push performance to the limit.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="contact-box" data-aos="zoom-in-up">
-                <div class="contact-content">
-                    <h2 class="contact-title">Ready to build?</h2>
-                    <p class="contact-text">Let's discuss your vision. I build bespoke digital products for clients who demand excellence.</p>
-                    <a href="mailto:info@dubrovinpe.com" class="email-link">info@dubrovinpe.com</a>
-                </div>
-            </div>
+    <!-- Footer / Contact -->
+    <footer id="contact">
+        <div class="contact-block">
+            <h2>Ready to build?</h2>
+            <p style="margin-bottom:2rem; color:rgba(255,255,255,0.6)">Let's discuss your vision. I build bespoke digital products for clients who demand excellence.</p>
+            <a href="mailto:info@dubrovinpe.com" class="email-link magnetic-area">info@dubrovinpe.com</a>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="logo" style="font-size: 1.2rem;">DUBROVINPE<span>.</span></div>
-                <div class="footer-links">
-                    <a href="impressum.html">Imprint</a>
-                    <a href="datenschutz.html">Privacy Policy</a>
-                </div>
-                <div class="copyright">
-                    &copy; 2026 dubrovinpe.com. All rights reserved.
-                </div>
+        <div class="footer-info">
+            <!-- Updated Footer Links -->
+            <div class="footer-links">
+                <a href="impressum.html">Imprint</a>
+                <a href="datenschutz.html">Privacy Policy</a>
+                <a href="https://www.linkedin.com/in/peter-dubrovin-a4b250252/" target="_blank">LinkedIn</a>
             </div>
+            <p>&copy; 2026 dubrovinpe.com</p>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <!-- Custom Scripts -->
+    <script src="script.js" defer></script>
 </body>
 </html>
