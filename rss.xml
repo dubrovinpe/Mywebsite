@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dubrovinpe.com — Web Building &amp; AI</title>
+    <description>Exploring the intersection of modern web development and artificial intelligence.</description>
+    <link>https://dubrovinpe.com</link>
+    <atom:link href="https://dubrovinpe.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en</language>
+    <lastBuildDate>Thu, 12 Jun 2025 00:00:00 +0000</lastBuildDate>
+
+    <item>
+      <title>Why AI Will Not Replace Web Developers — But Will Change Everything Else</title>
+      <description>The discourse around AI and web development is trapped between utopian promises and existential dread. The truth is more nuanced.</description>
+      <link>https://dubrovinpe.com/article/1</link>
+      <guid isPermaLink="true">https://dubrovinpe.com/article/1</guid>
+      <pubDate>Sat, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <category>AI</category>
+      <category>Opinion</category>
+    </item>
+
+    <item>
+      <title>The Quiet Power of Semantic HTML in an AI-Driven World</title>
+      <description>As language models increasingly consume and interpret the web, the semantic structure of your markup becomes a competitive advantage.</description>
+      <link>https://dubrovinpe.com/article/2</link>
+      <guid isPermaLink="true">https://dubrovinpe.com/article/2</guid>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <category>HTML</category>
+      <category>AI</category>
+    </item>
+
+    <item>
+      <title>Design Tokens at Scale: Building Systems That Outlast Frameworks</title>
+      <description>Frameworks come and go. A well-architected design token system survives them all.</description>
+      <link>https://dubrovinpe.com/article/3</link>
+      <guid isPermaLink="true">https://dubrovinpe.com/article/3</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <category>Design Systems</category>
+    </item>
+
+    <item>
+      <title>From ChatGPT to Production: A Practical Guide to LLM Integration</title>
+      <description>Everyone has played with ChatGPT. Few have shipped a product powered by an LLM.</description>
+      <link>https://dubrovinpe.com/article/4</link>
+      <guid isPermaLink="true">https://dubrovinpe.com/article/4</guid>
+      <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+      <category>AI</category>
+      <category>Engineering</category>
+    </item>
+
+    <item>
+      <title>CSS Has Grown Up: Container Queries, Layers, and the End of the Cascade Wars</title>
+      <description>Modern CSS solves the problems we spent a decade working around with JavaScript.</description>
+      <link>https://dubrovinpe.com/article/5</link>
+      <guid isPermaLink="true">https://dubrovinpe.com/article/5</guid>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <category>CSS</category>
+    </item>
+
+    <item>
+      <title>The Minimal Viable Website: Why Your Side Project Does Not Need React</title>
+      <description>Not every website needs a framework. Sometimes, a well-crafted HTML file is the most powerful thing you can ship.</description>
+      <link>https://dubrovinpe.com/article/6</link>
+      <guid isPermaLink="true">https://dubrovinpe.com/article/6</guid>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <category>Web Building</category>
+      <category>Opinion</category>
+    </item>
+
+    <item>
+      <title>Prompt Engineering Is Just Programming in a Different Language</title>
+      <description>The discourse around prompt engineering treats it as a new discipline. It is not. It is programming with natural language.</description>
+      <link>https://dubrovinpe.com/article/7</link>
+      <guid isPermaLink="true">https://dubrovinpe.com/article/7</guid>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <category>AI</category>
+      <category>Opinion</category>
+    </item>
+
+    <item>
+      <title>The Component Is Not the Unit of Design</title>
+      <description>We organize our codebases around components, but users experience patterns.</description>
+      <link>https://dubrovinpe.com/article/8</link>
+      <guid isPermaLink="true">https://dubrovinpe.com/article/8</guid>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0000</pubDate>
+      <category>Design Systems</category>
+      <category>Web Building</category>
+    </item>
+
+    <item>
+      <title>Why I Still Write CSS by Hand (and You Should Too)</title>
+      <description>In the age of Tailwind and CSS-in-JS, hand-written CSS seems anachronistic. Here is why it remains the most powerful way to think about visual design.</description>
+      <link>https://dubrovinpe.com/article/9</link>
+      <guid isPermaLink="true">https://dubrovinpe.com/article/9</guid>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+      <category>CSS</category>
+      <category>Opinion</category>
+    </item>
+
+    <item>
+      <title>Neural Networks for Frontend Developers: A Gentle Introduction</title>
+      <description>You do not need a PhD to understand neural networks. You need the right mental models.</description>
+      <link>https://dubrovinpe.com/article/10</link>
+      <guid isPermaLink="true">https://dubrovinpe.com/article/10</guid>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <category>Machine Learning</category>
+      <category>AI</category>
+    </item>
+
+  </channel>
+</rss>

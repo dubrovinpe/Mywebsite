@@ -1,33 +1,105 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMPRESSUM | DUBROVINPE.COM</title>
-    
-    <link rel="stylesheet" href="style.css">
-    
-    <style>
-        /* Spezifische Anpassungen nur für diese Seite */
-        body { padding: 8% 5%; line-height: 1.8; }
-        .box { max-width: 800px; margin: auto; position: relative; z-index: 1; }
-        h1 { font-family: 'Space Grotesk', sans-serif; font-size: 3rem; font-weight: 900; margin-bottom: 40px; border-bottom: 1px solid var(--border); }
-        h2 { font-family: 'Space Grotesk', sans-serif; margin-top: 30px; color: var(--primary); }
-        a { color: var(--primary); text-decoration: none; font-weight: bold; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Impressum — dubrovinpe.com">
+  <title>Impressum — dubrovinpe.com</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bg-glow"></div>
 
-    <div class="box">
-        <h1>IMPRESSUM</h1>
-        <p><strong>Angaben gemäß § 5 TMG</strong></p>
-        <p>Peter Dubrovin<br>Winzererstraße 134<br>80797 München</p>
-        
-        <h2>KONTAKT</h2>
-        <p>E-Mail: info@dubrovinpe<br>Telefon: +4915151909603</p>
-        
-        <p><br><a href="index.html">← ZURÜCK ZUR STARTSEITE</a></p>
+  <nav class="nav">
+    <div class="nav-brand"><a href="index.html">dubrovinpe</a></div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Blog</a>
+      <a href="index.html#topics">Topics</a>
+      <a href="index.html#about">About</a>
+      <a href="impressum.html" class="active">Impressum</a>
+      <a href="datenschutz.html">Privacy</a>
     </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <hr class="divider-hairline">
+
+  <main class="legal-page">
+    <a href="index.html" class="legal-back-link">← Back to Blog</a>
+
+    <h1>Impressum</h1>
+
+    <h2>Information pursuant to § 5 TMG</h2>
+    <p>
+      Peter Dubrovin<br>
+      Munich<br>
+      dubrovinpe.com
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      X / Twitter: <a href="https://x.com/PeterDubrovin" target="_blank" rel="noopener noreferrer">@PeterDubrovin</a><br>
+      Instagram: <a href="https://www.instagram.com/dubropet/" target="_blank" rel="noopener noreferrer">@dubropet</a>
+    </p>
+
+    <h2>Responsible for content pursuant to § 55 Abs. 2 RStV</h2>
+    <p>Peter Dubrovin</p>
+
+    <h2>Disclaimer</h2>
+
+    <h3>Liability for content</h3>
+    <p>
+      The contents of our pages were created with the utmost care. However, we cannot guarantee
+      the accuracy, completeness, or timeliness of the content. As a service provider, we are
+      responsible for our own content on these pages in accordance with general laws pursuant
+      to § 7 Abs.1 TMG. According to §§ 8 to 10 TMG, however, we are not obligated as a
+      service provider to monitor transmitted or stored third-party information or to
+      investigate circumstances that indicate illegal activity.
+    </p>
+
+    <h3>Liability for links</h3>
+    <p>
+      Our offer contains links to external third-party websites, the content of which we have
+      no influence over. Therefore, we cannot assume any liability for these external contents.
+      The respective provider or operator of the pages is always responsible for the content
+      of the linked pages. The linked pages were checked for possible legal violations at the
+      time of linking. Illegal contents were not recognizable at the time of linking.
+    </p>
+
+    <h3>Copyright</h3>
+    <p>
+      The content and works created by the site operators on these pages are subject to German
+      copyright law. Duplication, editing, distribution, and any form of commercialization
+      beyond the limits of copyright law require the written consent of the respective author
+      or creator.
+    </p>
+  </main>
+
+  <hr class="divider-hairline">
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <span class="footer-brand">dubrovinpe.com</span>
+        <nav class="footer-nav">
+          <div class="footer-nav-group">
+            <a href="index.html">Blog</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Privacy</a>
+          </div>
+        </nav>
+      </div>
+      <hr class="footer-divider">
+      <div class="footer-bottom">
+        <p class="footer-coordinate"><em>°</em> 48°08' N 11°34' E <em>(MUNICH, DE)</em> — <em>●</em> dubrovinpe.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

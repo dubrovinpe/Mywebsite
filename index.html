@@ -1,182 +1,204 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DUBROVINPE</title>
-    <meta
-      name="description"
-      content="Bespoke web development. Websites built from scratch for maximum performance."
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dubrovinpe.com — AI Blog by Peter Dubrovin</title>
+  <meta name="description" content="Exploring the frontier of artificial intelligence — thoughts, essays, and insights by Peter Dubrovin from München.">
+  <meta name="author" content="Peter Dubrovin">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>">
+</head>
+<body>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@300;500;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Reading Progress -->
+  <div class="reading-progress" id="readingProgress"></div>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Three.js Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  </head>
-  <body>
-    <!-- Custom Cursor Elements -->
-    <div class="cursor-dot" id="cursor-dot"></div>
-    <div class="cursor-outline" id="cursor-outline"></div>
-
-    <!-- WebGL Background Canvas -->
-    <div id="canvas-container"></div>
-
-    <!-- Bottom Light Effects -->
-    <div class="bottom-glow-overlay" id="glow-overlay"></div>
-    <div class="bottom-beam" id="bottom-beam"></div>
-
-    <!-- Navigation -->
-    <nav>
-      <div class="magnetic-area">
-        <a href="#" class="logo magnetic-wrap"
-          >DUBROVINPE<span style="color: var(--primary)">.</span></a
-        >
-      </div>
-
-      <ul class="nav-links">
-        <li class="magnetic-area">
-          <a href="#expertise" class="nav-link magnetic-wrap">Expertise</a>
-        </li>
-        <li class="magnetic-area">
-          <a href="#process" class="nav-link magnetic-wrap">Process</a>
-        </li>
-        <li class="magnetic-area">
-          <a href="#contact" class="nav-link magnetic-wrap">Contact</a>
-        </li>
-      </ul>
-
-      <!-- Mobile Menu Icon -->
-      <div class="mobile-toggle magnetic-area">
-        <div class="bar magnetic-wrap"></div>
-        <div class="bar magnetic-wrap"></div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header>
-      <div class="hero-status">
-        <div class="status-dot"></div>
-        Accepting New Projects
-      </div>
-      <h1>
-        Website <br />
-        <span class="highlight">Built from Zero</span>
-      </h1>
-      <p class="hero-desc">
-        I don't use templates. I engineer bespoke, high-performance websites
-        from a blank canvas, tailored precisely to your brand's DNA.
-      </p>
-
-      <!-- Button Wrapper (Magnetic effect disabled in JS for clickability) -->
-      <div class="magnetic-area">
-        <a href="#contact" class="btn-main magnetic-wrap">Start a Project</a>
-      </div>
-    </header>
-
-    <!-- Marquee Section -->
-    <section class="marquee-wrap">
-      <div class="marquee-content">
-        <span class="marquee-item">No Templates</span>
-        <span class="marquee-item">Custom Code</span>
-        <span class="marquee-item">Unique Architecture</span>
-        <span class="marquee-item">High Performance</span>
-        <span class="marquee-item">Full Ownership</span>
-        <span class="marquee-item">Zero Bloat</span>
-        <!-- Duplicate for seamless loop -->
-        <span class="marquee-item">No Templates</span>
-        <span class="marquee-item">Custom Code</span>
-        <span class="marquee-item">Unique Architecture</span>
-        <span class="marquee-item">High Performance</span>
-        <span class="marquee-item">Full Ownership</span>
-        <span class="marquee-item">Zero Bloat</span>
-      </div>
-    </section>
-
-
-<section id="expertise" class="section-padding">
-    <span class="section-label">The Difference</span>
-    <h2 class="grid-title">Why build<br>from scratch?</h2>
-
-    <div class="card-grid">
-       
-        <article class="tilt-card">
-            <div class="card-glare"></div>
-          
-            <img src="stills/1.jpg" alt="Custom Design Concept" class="card-bg-img">
-            
-            <div class="card-num">01</div>
-            <div class="card-content">
-                <h3 class="card-title">100% Custom Design</h3>
-                <p class="card-text">No generic layouts. Every pixel is placed with intention to create a unique visual identity.</p>
-            </div>
-        </article>
-
- 
-        <article class="tilt-card">
-            <div class="card-glare"></div>
-        
-            <img src="stills/2.jpg" alt="Code Architecture" class="card-bg-img">
-            
-            <div class="card-num">02</div>
-            <div class="card-content">
-                <h3 class="card-title">Zero Code Bloat</h3>
-                <p class="card-text">I write lean, semantic code. This results in lightning-fast speeds and perfect SEO scores.</p>
-            </div>
-        </article>
-
-    
-        <article class="tilt-card">
-            <div class="card-glare"></div>
-        
-            <img src="stills/3.jpg" alt="Scalable Platform" class="card-bg-img">
-            
-            <div class="card-num">03</div>
-            <div class="card-content">
-                <h3 class="card-title">Total Ownership</h3>
-                <p class="card-text">Custom code means you own your platform entirely, allowing for unlimited scalability.</p>
-            </div>
-        </article>
+  <!-- Navigation -->
+  <nav class="site-nav" id="siteNav">
+    <a href="#" class="nav-logo">dubrovinpe</a>
+    <div class="nav-links">
+      <a href="#posts" class="nav-link active">Journal</a>
+      <a href="#about" class="nav-link">About</a>
     </div>
-</section>
+    <div class="nav-social">
+      <a href="https://www.instagram.com/dubropet/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://x.com/PeterDubrovin" target="_blank" rel="noopener">X</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
 
-  
-    <footer id="contact">
-      <div class="contact-block">
-        <h2>Ready to build?</h2>
-        <p style="margin-bottom: 2rem; color: rgba(255, 255, 255, 0.6)">
-          Let's discuss your vision. I build bespoke digital products for
-          clients who demand excellence.
-        </p>
-        <a href="mailto:info@dubrovinpe.com" class="email-link magnetic-area"
-          >info@dubrovinpe.com</a
-        >
-      </div>
-      <div class="footer-info">
-        <!-- Updated Footer Links -->
-        <div class="footer-links">
-          <a href="impressum.html">Imprint</a>
-          <a href="datenschutz.html">Privacy Policy</a>
-          <a
-            href="https://www.linkedin.com/in/peter-dubrovin-a4b250252/"
-            target="_blank"
-            >LinkedIn</a
-          >
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#posts" onclick="closeMobileNav()">Journal</a>
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#quotes" onclick="closeMobileNav()">Quotes</a>
+    <a href="https://www.instagram.com/dubropet/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://x.com/PeterDubrovin" target="_blank" rel="noopener">X</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-eyebrow">München — AI Research & Writing</div>
+      <h1 class="hero-headline">
+        The Future<em>of</em>Intelligence
+      </h1>
+      <p class="hero-subtitle">
+        Essays and explorations on artificial intelligence, language models, and the shifting boundary between human and machine cognition.
+      </p>
+    </div>
+    <div class="hero-decoration">
+      <span class="hero-decoration-text">AI</span>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Inverted Editorial Letter -->
+  <section class="editorial-section reveal">
+    <div class="editorial-eyebrow">A Letter from the Editor</div>
+    <p class="editorial-body">
+      We are living through the most significant shift in cognition since the printing press. Artificial intelligence is not merely a tool — it is a <em>mirror</em> that reflects our assumptions about thought, language, and creativity. This journal is my attempt to document what I see in that reflection.
+    </p>
+    <div class="editorial-footer">From the Work Desk — München</div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Posts Section -->
+  <section class="posts-section" id="posts">
+    <div class="posts-header">
+      <h2 class="posts-title reveal">Latest<br>Writings</h2>
+      <div class="posts-controls">
+        <div class="search-box">
+          <input type="text" class="search-input" id="searchInput" placeholder="Search essays...">
         </div>
-        <p>&copy; 2026 dubrovinpe.com</p>
+        <div class="tag-filters" id="tagFilters">
+          <!-- Generated by JS -->
+        </div>
       </div>
-    </footer>
+    </div>
+    <div class="posts-grid reveal-stagger" id="postsGrid">
+      <!-- Generated by JS -->
+    </div>
+    <div class="no-results" id="noResults">
+      <div class="no-results-text">Nothing found</div>
+    </div>
+  </section>
 
-    <!-- Custom Scripts -->
-    <script src="script.js" defer></script>
-  </body>
+  <!-- Stamped Section Header -->
+  <div class="stamped-header">
+    <div class="stamped-text">PERSPECTIVES</div>
+  </div>
+
+  <!-- Quotes Section -->
+  <section class="quotes-section" id="quotes">
+    <div class="quotes-header reveal">Thoughts on AI</div>
+    <div class="quotes-grid reveal-stagger" id="quotesGrid">
+      <!-- Generated by JS -->
+    </div>
+  </section>
+
+  <!-- Stats Band -->
+  <div class="stats-band reveal-stagger" id="statsBand">
+    <div class="stat-item">
+      <div class="stat-number" data-target="47">0</div>
+      <div class="stat-label">Essays Published</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="12">0</div>
+      <div class="stat-label">Topics Explored</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="8">0</div>
+      <div class="stat-label">Months Writing</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="3200">0</div>
+      <div class="stat-label">Readers</div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="about-grid reveal">
+      <div>
+        <div class="about-label">About the Author</div>
+        <h2 class="about-name">Peter<br>Dubrovin</h2>
+      </div>
+      <div class="about-details">
+        <div class="about-text">
+          <p>Based in München, I write about artificial intelligence — not as a technologist celebrating progress, but as an observer trying to understand what it means when machines begin to think, speak, and create.</p>
+          <p>This blog is my running notebook: essays on language models, reflections on consciousness, and dispatches from the edge where human cognition meets artificial intelligence.</p>
+        </div>
+        <div class="about-detail-row">
+          <div class="about-detail-label">Location</div>
+          <div class="about-detail-value">München, Germany</div>
+        </div>
+        <div class="about-detail-row">
+          <div class="about-detail-label">Focus</div>
+          <div class="about-detail-value">Artificial Intelligence</div>
+        </div>
+        <div class="about-detail-row">
+          <div class="about-detail-label">Social</div>
+          <div class="about-detail-value">
+            <a href="https://www.instagram.com/dubropet/" style="border-bottom: 1px solid var(--color-midstone); padding-bottom: 1px;">Instagram</a>
+            &nbsp;&nbsp;/&nbsp;&nbsp;
+            <a href="https://x.com/PeterDubrovin" style="border-bottom: 1px solid var(--color-midstone); padding-bottom: 1px;">X</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">dubrovinpe<br>.com</div>
+      <div class="footer-links">
+        <a href="#posts" class="footer-link">Journal</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="https://www.instagram.com/dubropet/" target="_blank" rel="noopener" class="footer-link">Instagram</a>
+        <a href="https://x.com/PeterDubrovin" target="_blank" rel="noopener" class="footer-link">X</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-coordinate">
+        <span class="footer-dot"></span>
+        <span>48°08' N 11°34' E — München</span>
+      </div>
+      <div class="footer-legal">
+        <a class="footer-legal-link" id="link-impressum">Impressum</a>
+        <span class="footer-legal-separator"></span>
+        <a class="footer-legal-link" id="link-privacy">Datenschutz</a>
+      </div>
+      <span class="footer-copyright">© 2025 Peter Dubrovin</span>
+    </div>
+  </footer>
+
+  <!-- Modal (shared for Articles + Impressum + Datenschutz) -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-container" id="modalContainer">
+      <button class="modal-close" id="modalClose">Close</button>
+      <div class="modal-tag" id="modalTag"></div>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <div class="modal-meta" id="modalMeta"></div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
 </html>
